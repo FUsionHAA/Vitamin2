@@ -1,0 +1,145 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+li:hover {
+    cursor: pointer;
+    color: rgb(114, 103, 103);
+}
+
+li:active {
+    color: rgb(43, 40, 40);
+}
+
+/*** navigation settings ***/
+
+#navShadow {
+    position: fixed;
+    left: -40%;
+    width: 48%;
+    height: 100%;
+}
+
+#nav {
+    position: fixed;
+    z-index: 1;
+    height: 100vh;
+    display: flex;
+    flex-direction: row-reverse;
+    background-color: rgb(235, 236, 238);
+}
+
+.nav__btn {
+    width: 3rem;
+}
+
+/* burger sttings */
+.wrapper {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    margin-left: -16px;
+}
+
+.circle {
+	width: 40px;
+	height: 40px;
+	position: relative;
+}
+
+.line {
+	position: absolute;
+	height: 2px;
+	width: 70%;
+	background: black;
+	border-radius: 2px;
+	transition: all cubic-bezier(0.26, 0.1, 0.27, 1.55) 0.4s;
+}
+
+.top {
+	top: 38%;
+}
+
+.bottom {
+	top: 58%;
+}
+
+.icon.close .top {
+	transform: rotate(45deg);
+	top: 48%;
+}
+
+.icon.close .bottom {
+	transform: rotate(-45deg);
+	top: 48%;
+}
+
+/* slider settings */
+.nav__slider {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-column-gap: 2rem;
+    margin: 30% 5% 5% 15%;
+}
+
+.nav__slider__menu {
+    margin-bottom: 3.5rem;
+    font-size: .8rem;
+    color: rgb(173, 173, 173);
+}
+
+.nav__slider__main>* {
+    font-size: 2.2rem;
+    padding: 0 0 28px 0;
+}
+
+.nav__slider__sec li { 
+    font-size: .8rem;
+    font-weight: 900;
+    padding: 0 0 8px 0;
+}
+
+.nav__slider__bott>p {
+    font-weight: 900;
+    margin-bottom: 10px;
+    width: 230px;
+}
+
+.nav__slider__bott li {
+    padding: 2px;
+    font-size: .8rem;
+    color: rgb(173, 173, 173);
+}
+
+.nav__slider__bott li:hover {
+    color: rgb(129, 127, 127);
+}
+
+.nav__slider__bott li:active {
+    color: rgb(63, 61, 61);
+}
+
+/* that T was kinda random without context :) */
+.randomT {
+    position: fixed;
+    z-index: 2;
+    font-size: 2.8rem;
+    font-weight: 600;
+    color: black;
+    margin: 30px 0 0 8px;
+}
+
+.gif {
+    width: 100%;
+    height: 75vh;
+    position: fixed;
+}
+
